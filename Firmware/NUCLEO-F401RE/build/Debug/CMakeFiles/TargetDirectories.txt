@@ -1,0 +1,5 @@
+C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/build/Debug/CMakeFiles/NUCLEO-F401RE.dir
+C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/build/Debug/CMakeFiles/edit_cache.dir
+C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/build/Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/build/Debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/build/Debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir
