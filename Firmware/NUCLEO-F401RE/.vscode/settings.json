@@ -3,6 +3,7 @@
     "gpio.h": "c",
     "hw_gpio.h": "c",
     "main.h": "c",
-    "hw_uart.h": "c"
+    "hw_uart.h": "c",
+    "hw.h": "c"
   }
 }

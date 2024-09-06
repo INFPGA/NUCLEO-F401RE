@@ -1,5 +1,5 @@
-#ifndef __HW_GPIO_H__
-#define __HW_GPIO_H__
+#ifndef HW_GPIO_H_
+#define HW_GPIO_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -23,10 +23,10 @@ typedef struct
   uint8_t state;
 } PinInfo_t;
 
-void pinInit(void);
+bool pinInit(void);
 uint8_t pinRead(uint8_t ch);
 bool pinWrite(PinList_t ch, uint8_t state);
-bool pinToggleDelay(PinList_t ch, uint32_t repeatCount, uint32_t ms);
+bool pinToggle(PinList_t ch);
 
 #ifdef __cplusplus
 }

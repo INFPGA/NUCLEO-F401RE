@@ -5,8 +5,22 @@ cmake_policy(SET CMP0009 NEW)
 # SRC_FILES at CMakeLists.txt:48 (file)
 file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/Component/*.c")
 set(OLD_GLOB
+  "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/Component/hw_adc.c"
   "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/Component/hw_gpio.c"
+  "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/Component/hw_i2c.c"
+  "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/Component/hw_spi.c"
+  "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/Component/hw_tim.c"
   "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/Component/hw_uart.c"
+  )
+if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
+  message("-- GLOB mismatch!")
+  file(TOUCH_NOCREATE "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/build/Debug/CMakeFiles/cmake.verify_globs")
+endif()
+
+# SRC_FILES at CMakeLists.txt:48 (file)
+file(GLOB NEW_GLOB LIST_DIRECTORIES true "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/hw.c")
+set(OLD_GLOB
+  "C:/Users/onste/workspace/Personal/NUCLEO-F401RE/Firmware/NUCLEO-F401RE/Hardware/hw.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

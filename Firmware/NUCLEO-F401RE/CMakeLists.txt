@@ -47,6 +47,7 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 file(GLOB SRC_FILES CONFIGURE_DEPENDS
     Hardware/Component/*.c
+    Hardware/hw.c
 )
 
 # Add sources to executable
@@ -59,6 +60,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     Hardware/Component/Include
+    Hardware/
 )
 
 # Add project symbols (macros)

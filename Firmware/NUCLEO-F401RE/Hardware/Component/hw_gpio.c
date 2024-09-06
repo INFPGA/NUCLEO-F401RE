@@ -5,10 +5,10 @@
 
 static PinInfo_t gpio[GPIO_PIN_MAX] = 
 { 
-  { LD2_GPIO_Port,  LD2_Pin,  HIGH },
+  { LD2_GPIO_Port,  LD2_Pin,  LOW },
 };
 
-void pinInit(void)
+bool pinInit(void)
 {
   bool ret;
 
@@ -61,23 +61,4 @@ bool pinToggle(PinList_t ch)
   HAL_GPIO_TogglePin(gpio[ch].port, gpio[ch].pin);
 
   return true;
-}
-
-bool pinToggleDelay(PinList_t ch, uint32_t repeatCount, uint32_t ms)
-{
-  if (ch >= GPIO_PIN_MAX)
-  {
-    return false;
-  }
-
-  uint32_t currentTime = HAL_GetTick();
-
-  for (uint32_t i=0; i<repeatCount; i++)
-  {
-    if (HAL_GetTick() - currentTime >= ms)
-    {
-      currentTime = HAL_GetTick();
-      pinToggle(ch);
-    }
-  }
 }
