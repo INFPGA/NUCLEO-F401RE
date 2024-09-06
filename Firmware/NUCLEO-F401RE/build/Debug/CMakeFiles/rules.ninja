@@ -58,6 +58,15 @@ rule RERUN_CMAKE
 
 
 #############################################
+# Rule for re-checking globbed directories.
+
+rule VERIFY_GLOBS
+  command = C:\ST\STM32CubeCLT_1.16.0\CMake\bin\cmake.exe -P C:\Users\onste\workspace\Personal\NUCLEO-F401RE\Firmware\NUCLEO-F401RE\build\Debug\CMakeFiles\VerifyGlobs.cmake
+  description = Re-checking globbed directories...
+  generator = 1
+
+
+#############################################
 # Rule for cleaning all built files.
 
 rule CLEAN
